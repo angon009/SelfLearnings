@@ -39,8 +39,7 @@ We can change the truncation characters according to our need.
 
 We can get the enum values in more humanizing way like the below example :
 
-<pre>
-```csharp
+<pre> 
 enum TypeOfScience
 
 {
@@ -66,17 +65,21 @@ Console.WriteLine("With Humanizing : " + TypeOfScience.PhysicalScience.Humanize(
 
 For those enum values which have a description it will print the description if we humanize it.
 
+<pre>
 Console.WriteLine("Without Humanizing : " + TypeOfScience.AgriculturalScience);
 
 Console.WriteLine("With Humanizing : "+ TypeOfScience.AgriculturalScience.Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.010.png)
 
 We can also dehumanize the values of our enum like that -
 
+<pre>
 TypeOfScience typeOfScience = "ChemicalScience".DehumanizeTo<TypeOfScience>();
 
 Console.WriteLine("After Dehumanizing: " + typeOfScience);
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.011.png)
 
@@ -88,88 +91,110 @@ Console.WriteLine("After Dehumanizing : " + typeOfScience);![](/Screenshots/Aspo
 
 We can convert date time values as we humans say like tomorrow , yesterday.
 
+<pre>
 Console.WriteLine("Before Humanizing : " + DateTime.Now);
 
 Console.WriteLine("After Humanizing : "+ DateTime.Now.Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.013.png)
 
+<pre>
 Console.WriteLine("Before Humanizing : " + DateTime.Now.AddDays(1));
 
 Console.WriteLine("After Humanizing : " + DateTime.Now.AddDays(1).Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.014.png)
 
 This is happening because 1 second is lacking from this time. So, we have to add 1 second to this day.
 
+<pre>
 Console.WriteLine("Before Humanizing : " + DateTime.Now.AddDays(1));
 
 Console.WriteLine("After Humanizing : " + DateTime.Now.AddDays(1).AddSeconds(1).Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.015.png)
 
 We can also get ‘yesterday' value.
 
+<pre>
 Console.WriteLine("Before Humanizing : " + DateTime.Now.AddDays(-1));
 
-Console.WriteLine("After Humanizing : " + DateTime.Now.AddDays(-1).Humanize());![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.016.png)
+Console.WriteLine("After Humanizing : " + DateTime.Now.AddDays(-1).Humanize());
+</pre>
 
+![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.016.png)
+
+<pre>
 Console.WriteLine("Before Humanizing : " + DateTime.Now.AddDays(-2));
 
 Console.WriteLine("After Humanizing : " + DateTime.Now.AddDays(-2).Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.017.png)
 
 We can also humanize the value of timespan. Like this -
 
+<pre>
 Console.WriteLine("Before Humanizing : " + TimeSpan.FromHours(42));
 
 Console.WriteLine("After Humanizing : " + TimeSpan.FromHours(42).Humanize());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.018.png)
 
 But the output is not totally precise, we can precise it through passing precision parameters from the .Humanize() method.
 
+<pre>
 Console.WriteLine("Before Humanizing : " + TimeSpan.FromHours(42));
 
 Console.WriteLine("After Humanizing : " + TimeSpan.FromHours(42).Humanize(2));
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.019.png)
 
 We can precise our output more than that.
 
+<pre>
 Console.WriteLine("Before Humanizing : " + TimeSpan.FromHours(42.5));
 
 Console.WriteLine("After Humanizing : " + TimeSpan.FromHours(42.5).Humanize(3));
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.020.png)
 
 We can also humanize the value of TimeOnly(). Like this-
 
+<pre>
 Console.WriteLine("Before Humanizing : " + new TimeOnly(15,15));
 
 Console.WriteLine("After Humanizing : " + new TimeOnly(15, 15).ToClockNotation());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.021.png)
 
 1. **Working with Numeric values :**
 
 - We can convert our numeric numbers to words like this-
-
-Console.WriteLine("7143 in words is : " + 7143.ToWords());
-
-![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.022.png)
+  <pre>
+  Console.WriteLine("7143 in words is : " + 7143.ToWords());
+  </pre>
+  ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.022.png)
 
 But it’s not actually precise because in many terms ‘and’ should be used to denote numbers after a decimal point. So, seven thousand one hundred and forty-three will be denoted as : 7100.43
 
 We can remove this and to get more precise value :
 
+<pre>
 Console.WriteLine("7143 in words is : " + 7143.ToWords(false));
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.023.png)
 
 - We can get the ordinal name of numbers like this -
-
+<pre>
 for(int i = 1; i < 20; i++)
 
 {
@@ -178,10 +203,12 @@ for(int i = 1; i < 20; i++)
 
 }
 
+</pre>
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.024.png)
 
 - We can get the roman values of numbers like this -
 
+<pre>
 for (int i = 1; i < 20; i++)
 
 {
@@ -189,19 +216,22 @@ for (int i = 1; i < 20; i++)
 `    `Console.WriteLine($"Roman value of {i} is : " + i.ToRoman());
 
 }
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.025.png)
 
 We can also convert the roman signs into numeric values :
 
+<pre>
 Console.WriteLine("Numeric value of XIX is : " + "XIX".FromRoman());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.026.png)
 
 1. ` `**Converting bytes or bits :**
 
 - We can interchange the bytes to Terabytes, Megabytes, Gigabytes etc and also humanize the value of bytes like this -\*\*
-
+<pre>
 var memorySize = 35000.Gigabytes();
 
 Console.WriteLine($"{memorySize.Humanize()} = {memorySize.Bits} Bits");
@@ -212,12 +242,14 @@ Console.WriteLine($"{memorySize.Humanize()} = {memorySize.Megabytes} MB");
 
 Console.WriteLine($"{memorySize.Humanize()} = {memorySize.Terabytes} TB");
 
+</pre>
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.027.png)
 
 1. **Converting degrees to directions :**
 
 Just see the below code and its output :
 
+<pre>
 Console.WriteLine(90d.ToHeading(HeadingStyle.Full)); // d means ‘double’
 
 Console.WriteLine(180d.ToHeading(HeadingStyle.Full));
@@ -225,11 +257,13 @@ Console.WriteLine(180d.ToHeading(HeadingStyle.Full));
 Console.WriteLine(270d.ToHeading(HeadingStyle.Full));
 
 Console.WriteLine(360d.ToHeading(HeadingStyle.Full));
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.028.png)
 
 We can also get some directional signs :
 
+<pre>
 Debug.Print(114d.ToHeadingArrow().ToString()); // d means ‘double’
 
 Debug.Print(200d.ToHeadingArrow().ToString());
@@ -237,6 +271,7 @@ Debug.Print(200d.ToHeadingArrow().ToString());
 Debug.Print(296d.ToHeadingArrow().ToString());
 
 Debug.Print(333d.ToHeadingArrow().ToString());
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.029.png)
 
@@ -244,6 +279,7 @@ Debug.Print(333d.ToHeadingArrow().ToString());
 
 Humanizer can be used to pluralize or singularize words based on context. For example, "1 book" vs "2 books" like this -
 
+<pre>
 string bookName = "Book";
 
 int count = 1;
@@ -265,6 +301,7 @@ if(count == 2)
 `    `Console.WriteLine($"{count} {bookName.Pluralize()}");
 
 }
+</pre>
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.030.png)
 
