@@ -8,7 +8,7 @@ for software. But the humanize package makes this conversion easy. Ex:
 Converting 4.30pm to Half Past Four, Transforming string to be a
 specific enum value etc.
 
-1.  **Transforming string case : **
+**Transforming string case : **
 
     a.  testString.Transform(To.TitleCase) : It will capitalize the
         > first letter of all the words and it will convert all of the
