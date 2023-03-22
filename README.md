@@ -1,4 +1,4 @@
-<center>**Humanizer**</center>
+<span style="font-size: 24px; color: blue;"> Humanize </span>
 
 Converting values and code can be tricky. For example, if we rank something we will see that the top pick is in the first place,not in one place and the next one down would be in second place, not in two places. These types of conversions are easy to do by humans but these are tricky for software. But the humanize package makes this conversion easy. Ex: Converting 4.30pm to Half Past Four, Transforming string to be a specific enum value etc.
 
