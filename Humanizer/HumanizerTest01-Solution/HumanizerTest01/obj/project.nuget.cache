@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TduGrtZDsVYx7cZpxkSg24PIJ1eQYpSO9fABi2OrkqKWDEiVr81ypEWIPn+jAWKzs3H35ceURmwENb2yPR9t1w==",
+  "success": true,
+  "projectFilePath": "C:\\Personal\\Humanizer\\HumanizerTest01-Solution\\HumanizerTest01\\HumanizerTest01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angon\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512"
+  ],
+  "logs": []
+}

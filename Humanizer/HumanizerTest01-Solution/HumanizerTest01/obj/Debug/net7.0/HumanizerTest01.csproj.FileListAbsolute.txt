@@ -1,0 +1,17 @@
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\HumanizerTest01.exe
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\HumanizerTest01.deps.json
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\HumanizerTest01.runtimeconfig.json
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\HumanizerTest01.dll
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\HumanizerTest01.pdb
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\bin\Debug\net7.0\Humanizer.dll
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.csproj.AssemblyReference.cache
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.AssemblyInfoInputs.cache
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.AssemblyInfo.cs
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.csproj.CoreCompileInputs.cache
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.csproj.CopyComplete
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.dll
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\refint\HumanizerTest01.dll
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.pdb
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\HumanizerTest01.genruntimeconfig.cache
+C:\Personal\Humanizer\HumanizerTest01-Solution\HumanizerTest01\obj\Debug\net7.0\ref\HumanizerTest01.dll
