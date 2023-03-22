@@ -8,7 +8,7 @@ for software. But the humanize package makes this conversion easy. Ex:
 Converting 4.30pm to Half Past Four, Transforming string to be a
 specific enum value etc.
 
-**Transforming string case : **
+1.  **Transforming string case :**
 
     a.  testString.Transform(To.TitleCase) : It will capitalize the
         > first letter of all the words and it will convert all of the
@@ -42,7 +42,7 @@ i.  testString.Transform(To.LowerCase, To.TitleCase) :
 Thus, we can do various types of chaining to transform strings to get
 our desired output.
 
-1.  **Truncating string : **
+2.  **Truncating string :**
 
 > Ex : stringForCaseTest.Truncate(10) :
 > ![](media/image4.png){width="6.5in" height="0.8611111111111112in"}
@@ -62,7 +62,7 @@ our desired output.
 >
 > We can change the truncation characters according to our need.
 
-1.  **Humanizing Enum Values : **
+3.  **Humanizing Enum Values :**
 
 > We can get the enum values in more humanizing way like the below
 > example :
@@ -119,7 +119,7 @@ our desired output.
 > typeOfScience);![](media/image9.png){width="5.640625546806649in"
 > height="1.1145833333333333in"}
 
-1.  **Humanizing Datetime : **
+4.  **Humanizing Datetime :**
 
 > We can convert date time values as we humans say like tomorrow ,
 > yesterday.
@@ -205,7 +205,7 @@ our desired output.
 > ![](media/image24.png){width="5.859375546806649in"
 > height="1.2708333333333333in"}
 
-1.  **Working with Numeric values : **
+5.  **Working with Numeric values :**
 
 -   We can convert our numeric numbers to words like this-
 
@@ -256,7 +256,7 @@ our desired output.
 >
 > ![](media/image20.png){width="6.036458880139983in" height="1.125in"}
 
-1.  **Converting bytes or bits :**
+6.  **Converting bytes or bits :**
 
 -   We can interchange the bytes to Terabytes, Megabytes, Gigabytes etc
     > and also humanize the value of bytes like this -
@@ -278,7 +278,7 @@ our desired output.
 > ![](media/image25.png){width="5.484375546806649in"
 > height="1.8020833333333333in"}
 
-1.  **Converting degrees to directions : **
+7.  **Converting degrees to directions :**
 
 > Just see the below code and its output :
 >
@@ -306,7 +306,7 @@ our desired output.
 > ![](media/image18.png){width="4.052083333333333in"
 > height="2.9166666666666665in"}
 
-1.  **Singularize and Pluralize Values based on the context : **
+8.  **Singularize and Pluralize Values based on the context :**
 
 > Humanizer can be used to pluralize or singularize words based on
 > context. For example, "1 book" vs "2 books" like this -
