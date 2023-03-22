@@ -330,3 +330,5 @@ The Humanizer library can be used in a wide range of applications where develope
 **Games**: Humanizers can be used in games to create more immersive and engaging experiences for players. For example, it can be used to format quest descriptions or dialogue in a way that is more natural and conversational.
 
 Overall, Humanizer is a versatile library that can be used in many different types of applications to create more human-friendly experiences for users.
+
+**Added sample codes for better understandings. Comment out the other region's when you are working in a particular region.**
