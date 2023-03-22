@@ -1,12 +1,14 @@
-**Humanizer**
+<center>**Humanizer**</center>
 
 Converting values and code can be tricky. For example, if we rank something we will see that the top pick is in the first place,not in one place and the next one down would be in second place, not in two places. These types of conversions are easy to do by humans but these are tricky for software. But the humanize package makes this conversion easy. Ex: Converting 4.30pm to Half Past Four, Transforming string to be a specific enum value etc.
 
 1. **Transforming string case :**
 
-   1. testString.Transform(To.TitleCase) : It will capitalize the first letter of all the words and it will convert all of the upper case letters to lowercase in between a word. But it will ignore if there is an all capital word like MOBILE, MANGO etc. Because it will consider this type of word as an acronym. ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.001.png)
+   1. testString.Transform(To.TitleCase) : It will capitalize the first letter of all the words and it will convert all of the upper case letters to lowercase in between a word. But it will ignore if there is an all capital word like MOBILE, MANGO etc. Because it will consider this type of word as an acronym.
+      ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.001.png)
 
-1. testString.Transform(To.SentenceCase) : It will capitalize the first letter of the entire string and the rest of the characters will be ignored even for a new line after dot. ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.002.png)
+1. testString.Transform(To.SentenceCase) : It will capitalize the first letter of the entire string and the rest of the characters will be ignored even for a new line after dot.
+   ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.002.png)
 
 1. We can chain these together to get the desired output. For example-
    1. testString..Transform(To.SentenceCase,To.LowerCase) :
@@ -83,9 +85,14 @@ Console.WriteLine("After Dehumanizing: " + typeOfScience);
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.011.png)
 
+<pre>
+
 typeOfScience = "This is the science of agricultures".DehumanizeTo<TypeOfScience>();
 
-Console.WriteLine("After Dehumanizing : " + typeOfScience);![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.012.png)
+Console.WriteLine("After Dehumanizing : " + typeOfScience);
+</pre>
+
+![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.012.png)
 
 1. **Humanizing Datetime :**
 
