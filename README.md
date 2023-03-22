@@ -11,12 +11,11 @@ specific enum value etc.
 1.  **Transforming string case :**
 
     a.  testString.Transform(To.TitleCase) : It will capitalize the
-        > first letter of all the words and it will convert all of the
-        > upper case letters to lowercase in between a word. But it will
-        > ignore if there is an all capital word like MOBILE, MANGO etc.
-        > Because it will consider this type of word as an acronym.
-        > ![](media/image12.png){width="6.5in"
-        > height="0.8472222222222222in"}
+         first letter of all the words and it will convert all of the
+        upper case letters to lowercase in between a word. But it will
+        ignore if there is an all capital word like MOBILE, MANGO etc.
+        Because it will consider this type of word as an acronym.
+        ![](media/image12.png){width="6.5in"height="0.8472222222222222in"}
 
     b.  testString.Transform(To.SentenceCase) : It will capitalize the
         > first letter of the entire string and the rest of the
