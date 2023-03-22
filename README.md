@@ -23,7 +23,7 @@ Converting values and code can be tricky. For example, if we rank something we w
 
 Thus, we can do various types of chaining to transform strings to get our desired output.
 
-1. **Truncating string :**
+2. **Truncating string :**
 
 Ex : stringForCaseTest.Truncate(10) : ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.006.png)
 
@@ -39,7 +39,7 @@ But here ‘...’ will be considered as a 3 character word and it will be trunc
 
 We can change the truncation characters according to our need.
 
-1. **Humanizing Enum Values :**
+3. **Humanizing Enum Values :**
 
 We can get the enum values in more humanizing way like the below example :
 
@@ -96,7 +96,7 @@ Console.WriteLine("After Dehumanizing : " + typeOfScience);
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.012.png)
 
-1. **Humanizing Datetime :**
+4. **Humanizing Datetime :**
 
 We can convert date time values as we humans say like tomorrow , yesterday.
 
@@ -184,7 +184,7 @@ Console.WriteLine("After Humanizing : " + new TimeOnly(15, 15).ToClockNotation()
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.021.png)
 
-1. **Working with Numeric values :**
+5. **Working with Numeric values :**
 
 - We can convert our numeric numbers to words like this-
   <pre>
@@ -237,7 +237,7 @@ Console.WriteLine("Numeric value of XIX is : " + "XIX".FromRoman());
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.026.png)
 
-1. ` `**Converting bytes or bits :**
+6. **Converting bytes or bits :**
 
 - We can interchange the bytes to Terabytes, Megabytes, Gigabytes etc and also humanize the value of bytes like this -\*\*
 <pre>
@@ -254,7 +254,7 @@ Console.WriteLine($"{memorySize.Humanize()} = {memorySize.Terabytes} TB");
 </pre>
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.027.png)
 
-1. **Converting degrees to directions :**
+7. **Converting degrees to directions :**
 
 Just see the below code and its output :
 
@@ -284,7 +284,7 @@ Debug.Print(333d.ToHeadingArrow().ToString());
 
 ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.029.png)
 
-1. **Singularize and Pluralize Values based on the context :**
+8. **Singularize and Pluralize Values based on the context :**
 
 Humanizer can be used to pluralize or singularize words based on context. For example, "1 book" vs "2 books" like this -
 
