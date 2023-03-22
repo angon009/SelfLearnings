@@ -27,7 +27,9 @@ Thus, we can do various types of chaining to transform strings to get our desire
 
 Ex : stringForCaseTest.Truncate(10) : ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.006.png)
 
-We will get an ellipsis after the output sentence if we install utf-8 in our system. We can see the actual result on the debug screen. ![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.007.png)
+We will get an ellipsis after the output sentence if we install utf-8 in our system. We can see the actual result on the debug screen.
+
+![](/Screenshots/Aspose.Words.d93f253e-28a6-4aa3-a6a1-47ca8bd0e87e.007.png)
 
 Here, ‘...’ will be considered as a single character. But we can also change this truncations character according to our own like this -
 
