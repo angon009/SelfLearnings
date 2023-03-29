@@ -1,0 +1,15 @@
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\bin\Debug\net7.0\StrategyDesignPattern02.exe
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\bin\Debug\net7.0\StrategyDesignPattern02.deps.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\bin\Debug\net7.0\StrategyDesignPattern02.runtimeconfig.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\bin\Debug\net7.0\StrategyDesignPattern02.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\bin\Debug\net7.0\StrategyDesignPattern02.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.csproj.AssemblyReference.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.AssemblyInfoInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.AssemblyInfo.cs
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.csproj.CoreCompileInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\refint\StrategyDesignPattern02.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\StrategyDesignPattern02.genruntimeconfig.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\StrategyDesignPattern02\obj\Debug\net7.0\ref\StrategyDesignPattern02.dll

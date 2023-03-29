@@ -1,0 +1,15 @@
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\bin\Debug\net7.0\AbstractFactoryDesignPattern01.exe
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\bin\Debug\net7.0\AbstractFactoryDesignPattern01.deps.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\bin\Debug\net7.0\AbstractFactoryDesignPattern01.runtimeconfig.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\bin\Debug\net7.0\AbstractFactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\bin\Debug\net7.0\AbstractFactoryDesignPattern01.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.csproj.AssemblyReference.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.AssemblyInfoInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.AssemblyInfo.cs
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.csproj.CoreCompileInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\refint\AbstractFactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\AbstractFactoryDesignPattern01.genruntimeconfig.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\AbstractFactoryDesignPattern01\obj\Debug\net7.0\ref\AbstractFactoryDesignPattern01.dll

@@ -1,0 +1,15 @@
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\bin\Debug\net7.0\FactoryDesignPattern01.exe
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\bin\Debug\net7.0\FactoryDesignPattern01.deps.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\bin\Debug\net7.0\FactoryDesignPattern01.runtimeconfig.json
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\bin\Debug\net7.0\FactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\bin\Debug\net7.0\FactoryDesignPattern01.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.csproj.AssemblyReference.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.AssemblyInfoInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.AssemblyInfo.cs
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.csproj.CoreCompileInputs.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\refint\FactoryDesignPattern01.dll
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.pdb
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\FactoryDesignPattern01.genruntimeconfig.cache
+C:\Personal\CreationalPatterns\FactoryPattern-Solution\FactoryDesignPattern01\obj\Debug\net7.0\ref\FactoryDesignPattern01.dll
