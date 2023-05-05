@@ -5,37 +5,37 @@
 ```
 mapOperator() {
 
-    `const mappedData = from(this.employees).pipe(
+    const mappedData = from(this.employees).pipe(
 
-      `map((employee) => {                      
+      map((employee) => {                      
 
-        `return {
+        return {
 
-         `id: employee.id,
+         id: employee.id,
 
-          `name: employee.name.toUpperCase(),
+          name: employee.name.toUpperCase(),
 
-          `designation: `Senior ${employee.designation}`,
+          designation: Senior ${employee.designation},
 
-          `salary: employee.salary,
+          salary: employee.salary,
 
-          `joiningDate: employee.joiningDate
+          joiningDate: employee.joiningDate
 
-        `};
+        };
 
-      `})
+      })
 
-    `);
+    );
 
-    `this.employees = [];
+    this.employees = [];
 
-    `mappedData.subscribe((mappedEmployee) => {
+    mappedData.subscribe((mappedEmployee) => {
 
-      `this.employees.push(mappedEmployee);
+      this.employees.push(mappedEmployee);
 
-    `});
+    });
 
-  `}
+  }
 ```
 
 Here, 
@@ -56,123 +56,128 @@ By subscribing to the observable, we ensure that the transformation logic define
 
 2\. Property Extraction: With the map operator, we can extract specific properties from the emitted objects. For example, if we have an observable of user objects and we only need the names of the users, we can use map to extract and emit only the names.
 
+```
 const mappedData = from(this.employees).pipe(
 
-`      `map((employee) => {
+      map((employee) => {
 
-`        `return {
+        return {
 
-`          `id: employee.id,
+          id: employee.id,
 
-`          `name: employee.name.toUpperCase()
+          name: employee.name.toUpperCase()
 
-`        `};
+        };
 
-`      `})
+      })
 
-`    `);
-
+    );
+```
 3\. Data Projection: The map operator allows us to project the emitted values into a different structure or shape. We can transform the structure of the emitted objects, combine properties, or even create new objects based on the original values.
 
+```
 const mappedData = from(this.employees).pipe(
 
-`      `map((employee) => {
+      map((employee) => {
 
-`        `return {
+        return {
 
-`          `name: employee.name.toUpperCase(),
+          name: employee.name.toUpperCase(),
 
-`          `designation: `Senior ${employee.designation}`
+          designation: Senior ${employee.designation}
 
-`        `};
+        };
 
-`      `})
+      })
 
-`    `);
-
+    );
+```
 
 4\. Data Parsing: If the emitted values are in a serialized format like JSON or a string representation, the map operator can be used to parse and convert them into native objects or appropriate data types.
 
-` `map((employee) => {
+```
+ map((employee) => {
 
-`        `return {
+        return {
 
-`          `id: employee.id,
+          id: employee.id,
 
-`          `name: employee.name.toUpperCase(),
+          name: employee.name.toUpperCase(),
 
-`          `designation: `Senior ${employee.designation}`,
+          designation: Senior ${employee.designation},
 
-`          `salary: employee.salary,
+          salary: employee.salary,
 
-`          `joiningDate: new Date(employee.joiningDate),
+          joiningDate: new Date(employee.joiningDate),
 
-`          `// Parsing Joining Date
+          // Parsing Joining Date
 
-`        `};
+        };
 
-`      `})
+      })
+```
 
 - **Merge Map :** It is used to transform the items emitted by an observable into inner observables, and then merge those inner observables into a single observable. It allows us to perform operations that involve asynchronous tasks for each emitted item and combine the results into a single stream. Example : 
 
+```
 mergeMapOperator() {
 
-`    `from(this.employees)
+    from(this.employees)
 
 .pipe(
 
-`        `mergeMap((employee) => {
+        mergeMap((employee) => {
 
-`          `return this.fetchAdditionalDetails(employee.id).pipe(
+          return this.fetchAdditionalDetails(employee.id).pipe(
 
-`            `map((details) => {
+            map((details) => {
 
-`              `return {
+              return {
 
-`                `id: employee.id,
+                id: employee.id,
 
-`                `name: employee.name,
+                name: employee.name,
 
-`                `designation: employee.designation,
+                designation: employee.designation,
 
-`                `additionalDetails: details,
+                additionalDetails: details,
 
-`              `};
+              };
 
-`            `})
+            })
 
-`          `);
+          );
 
-`        `})
+        })
 
-`      `)
+      )
 
 .subscribe((margeMappedEmployee) => {
 
-`        `this.employees.push(margeMappedEmployee);
+        this.employees.push(margeMappedEmployee);
 
-`      `});
+      });
 
-`  `}
+  }
 
-` `fetchAdditionalDetails(employeeId: number): Observable<any> {
+ fetchAdditionalDetails(employeeId: number): Observable<any> {
 
-`    `return this.http
+    return this.http
 
 .get<any[]>('/assets/employees.json')
 
 .pipe(
 
-`        `map((employees) =>
+        map((employees) =>
 
-`          `employees.find((employee) => employee.id === employeeId)
+          employees.find((employee) => employee.id === employeeId)
 
-`        `)
+        )
 
-`      `);
+      );
 
-`  `}
-
+  }
+```
 
 ‘mergeMap’ operator is used to transform each employee into an inner observable by calling the fetchAdditionalDetails() method.
 
@@ -204,43 +209,45 @@ The transformed employee object is then emitted by the inner observable.
 
 - **SwitchMap :**  It is used for mapping each value emitted by an observable to another observable, and then flattening the inner observables into a single observable. It cancels the previous inner observable when a new value is emitted, hence the name "switchMap". Example : 
 
+```
 switchMapOperator() {
 
-`    `const switchedData = from(this.employees).pipe(
+    const switchedData = from(this.employees).pipe(
 
-`      `switchMap((employee) => {
+      switchMap((employee) => {
 
-`        `return this.fetchAdditionalDetails(employee.id).pipe(
+        return this.fetchAdditionalDetails(employee.id).pipe(
 
-`          `map((details) => {
+          map((details) => {
 
-`            `return {
+            return {
 
-`              `name: employee.name,
+              name: employee.name,
 
-`              `designation: employee.designation,
+              designation: employee.designation,
 
-`              `additionalDetails: details,
+              additionalDetails: details,
 
-`            `};
+            };
 
-`          `})
+          })
 
-`        `);
+        );
 
-`      `})
+      })
 
-`    `);
+    );
 
-`    `//this.employees = [];
+    //this.employees = [];
 
-`    `switchedData.subscribe((switchedEmployee) => {
+    switchedData.subscribe((switchedEmployee) => {
 
-`      `this.employees.push(switchedEmployee);
+      this.employees.push(switchedEmployee);
 
-`    `});
+    });
 
-`  `}
+  }
+```
 
 **Use case of SwitchMap :** 
 
@@ -257,67 +264,69 @@ switchMapOperator() {
 
 - **ConcatMap :**  It is used for flattening and merging the results of inner observables in a sequential manner. It operates on each value emitted by the source observable and maps it to an inner observable. It then concatenates the results of those inner observables, ensuring the order of emitted values is preserved. Example : 
 
-`  `concatMapOperator() {
+```
+  concatMapOperator() {
 
-`    `const concatenatedData = from(this.employees).pipe(
+    const concatenatedData = from(this.employees).pipe(
 
-`      `concatMap((employee) => {
+      concatMap((employee) => {
 
-`        `return this.fetchAdditionalDetails(employee.id).pipe(
+        return this.fetchAdditionalDetails(employee.id).pipe(
 
-`          `delay(1000),
+          delay(1000),
 
-`          `map((details) => {
+          map((details) => {
 
-`            `return {
+            return {
 
-`              `id: employee.id,
+              id: employee.id,
 
-`              `name: employee.name,
+              name: employee.name,
 
-`              `designation: employee.designation,
+              designation: employee.designation,
 
-`              `salary: details.salary,
+              salary: details.salary,
 
-`              `joiningDate: details.joiningDate,
+              joiningDate: details.joiningDate,
 
-`            `};
+            };
 
-`          `})
+          })
 
-`        `);
+        );
 
-`      `})
+      })
 
-`    `);
+    );
 
-`    `this.employees = [];
+    this.employees = [];
 
-`    `concatenatedData.subscribe((concatenatedEmployee) => {
+    concatenatedData.subscribe((concatenatedEmployee) => {
 
-`      `this.employees.push(concatenatedEmployee);
+      this.employees.push(concatenatedEmployee);
 
-`    `});
+    });
 
-`  `}
+  }
 
-`  `fetchAdditionalDetails(employeeId: number): Observable<any> {
+  fetchAdditionalDetails(employeeId: number): Observable<any> {
 
-`    `return this.http
+    return this.http
 
 .get<any[]>('/assets/employees.json')
 
 .pipe(
 
-`        `map((employees) =>
+        map((employees) =>
 
-`          `employees.find((employee) => employee.id === employeeId)
+          employees.find((employee) => employee.id === employeeId)
 
-`        `)
+        )
 
-`      `);
+      );
 
-`  `}
+  }
+```
 
 ‘concatMap’ operator is used to sequentially concatenate inner observables created by the ‘fetchAdditionalDetails()’ method. For each employee in this.employees, the ‘fetchAdditionalDetails()’ method is called to retrieve additional details based on the employee's ID. The ‘concatMap’ operator ensures that the inner observables are subscribed to and processed sequentially.
 
@@ -359,24 +368,26 @@ In summary, map is used for simple value transformation, switchMap cancels the p
 
 - **Filter** : It is used to selectively emit values from an observable based on a specified condition. It filters out values that do not satisfy the condition and only emits the values that pass the condition.The filter operator takes a predicate function that evaluates each value emitted by the source observable. If the predicate function returns true for a value, it will be emitted to the subscriber; otherwise, it will be filtered out. Example : 
 
+```
 filterOperator() {
 
-`    `const filteredData = from(this.employees).pipe(
+    const filteredData = from(this.employees).pipe(
 
-`      `filter((employee) => employee.salary >= 70000)
+      filter((employee) => employee.salary >= 70000)
 
-`    `);
+    );
 
-`    `this.employees = [];
+    this.employees = [];
 
-`    `filteredData.subscribe((filteredEmployee) => {
+    filteredData.subscribe((filteredEmployee) => {
 
-`      `this.employees.push(filteredEmployee);
+      this.employees.push(filteredEmployee);
 
-`    `});
+    });
 
-`  `}
+  }
 
+```
 In this example, we are using the filter operator to filter out employees whose salary is greater than or equal to 70000.
 
 Here's a breakdown of how the filter operator works:
@@ -401,41 +412,45 @@ Step 03. The filtered values are then emitted by the resulting observable.
 
 - **Take :**  It is used to limit the number of emissions received from an observable. It takes an argument specifying the maximum number of emissions we want to take, and once that number is reached, it automatically completes and unsubscribes from the source observable. Example: 
 
+```
 takeOperator() {
 
-`    `const takenData = from(this.employees).pipe(take(3));
+    const takenData = from(this.employees).pipe(take(3));
 
-`    `this.employees = [];
+    this.employees = [];
 
-`    `takenData.subscribe((takenEmployee) => {
+    takenData.subscribe((takenEmployee) => {
 
-`      `this.employees.push(takenEmployee);
+      this.employees.push(takenEmployee);
 
-`    `});
+    });
 
-`  `}
+  }
+```
 
 The take operator is commonly used in scenarios where we want to limit the number of emitted values, such as taking a specific number of items from a stream or implementing pagination in API requests.
 
 - **Tap :** It is used to perform side effects for each emission of an observable without modifying the emitted values. It is often used for debugging, logging, or triggering actions that don't affect the emitted values. Example : 
 
-`  `tapOperator() {
+```
+  tapOperator() {
 
-`    `from(this.employees)
+    from(this.employees)
 
 .pipe(
 
-`        `tap((employee) => {
+        tap((employee) => {
 
-`          `console.log('Original Employee:', employee);
+          console.log('Original Employee:', employee);
 
-`        `})
+        })
 
-`      `)
+      )
 
 .subscribe();
 
-`  `}
+  }
+```
 
 ‘tap' operator is applied to the observable, and the callback function logs the original employee object to the console.
 
@@ -446,33 +461,37 @@ We can customize the tap operator's callback function to perform any desired sid
 
 - **Reduce:** It is used to accumulate values emitted by an observable into a single accumulated value. It applies a reducer function to each emitted value and maintains an internal state that gets updated with each value. When the source observable completes, the final accumulated value is emitted by the reduce operator as a single value. Example : 
 
-`  `reduceOperator() {
+```
+  reduceOperator() {
 
-`    `from([1, 2, 3])
+    from([1, 2, 3])
 
 .pipe(reduce((acc, value) => acc + value, 0))
 
 .subscribe((result) => {
 
-`        `console.log(result); // Output: 6 (1 + 2 + 3)
+        console.log(result); // Output: 6 (1 + 2 + 3)
 
-`      `});
+      });
 
-`  `}
+  }
+```
 
 - **Scan:** This operator is similar to the reduce operator, but it emits the accumulated value for each intermediate step of the accumulation process, rather than emitting only the final accumulated value. Example: 
 
-`  `scanOperator() {
+```
+  scanOperator() {
 
-`    `from([1, 2, 3, 4, 5])
+    from([1, 2, 3, 4, 5])
 
 .pipe(scan((acc, value) => acc + value, 0))
 
 .subscribe((result) => {
 
-`        `console.log(result); // Output: 1, 3, 6, 10, 15
+        console.log(result); // Output: 1, 3, 6, 10, 15
 
-`      `});
+      });
 
-`  `}
+  }
+```
 
