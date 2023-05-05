@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "designation": "Software Engineer",
+        "salary": 50000,
+        "joiningDate": "2020-01-01"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "designation": "Product Manager",
+        "salary": 80000,
+        "joiningDate": "2018-05-15"
+    },
+    {
+        "id": 3,
+        "name": "Mark Johnson",
+        "designation": "UI/UX Designer",
+        "salary": 60000,
+        "joiningDate": "2019-09-10"
+    },
+    {
+        "id": 4,
+        "name": "Emily Brown",
+        "designation": "Quality Assurance Engineer",
+        "salary": 55000,
+        "joiningDate": "2020-07-01"
+    },
+    {
+        "id": 5,
+        "name": "David Wilson",
+        "designation": "Project Manager",
+        "salary": 90000,
+        "joiningDate": "2017-03-21"
+    },
+    {
+        "id": 6,
+        "name": "Sarah Davis",
+        "designation": "Frontend Developer",
+        "salary": 55000,
+        "joiningDate": "2021-01-05"
+    },
+    {
+        "id": 7,
+        "name": "Michael Miller",
+        "designation": "Backend Developer",
+        "salary": 60000,
+        "joiningDate": "2022-02-10"
+    },
+    {
+        "id": 8,
+        "name": "Jessica Anderson",
+        "designation": "Data Scientist",
+        "salary": 75000,
+        "joiningDate": "2019-08-18"
+    },
+    {
+        "id": 9,
+        "name": "Ryan Wilson",
+        "designation": "System Analyst",
+        "salary": 65000,
+        "joiningDate": "2020-04-30"
+    },
+    {
+        "id": 10,
+        "name": "Emily Thomas",
+        "designation": "UI/UX Designer",
+        "salary": 60000,
+        "joiningDate": "2018-11-12"
+    },
+    {
+        "id": 11,
+        "name": "Jacob Martinez",
+        "designation": "Software Engineer",
+        "salary": 55000,
+        "joiningDate": "2021-06-25"
+    },
+    {
+        "id": 12,
+        "name": "Olivia Hernandez",
+        "designation": "Product Manager",
+        "salary": 85000,
+        "joiningDate": "2017-10-07"
+    },
+    {
+        "id": 13,
+        "name": "Daniel Robinson",
+        "designation": "Quality Assurance Engineer",
+        "salary": 60000,
+        "joiningDate": "2020-02-15"
+    },
+    {
+        "id": 14,
+        "name": "Sophia Turner",
+        "designation": "Frontend Developer",
+        "salary": 60000,
+        "joiningDate": "2021-03-10"
+    },
+    {
+        "id": 15,
+        "name": "Matthew Harris",
+        "designation": "Backend Developer",
+        "salary": 65000,
+        "joiningDate": "2019-12-01"
+    },
+    {
+        "id": 16,
+        "name": "Emma Walker",
+        "designation": "Data Analyst",
+        "salary": 55000,
+        "joiningDate": "2020-06-15"
+    },
+    {
+        "id": 17,
+        "name": "Andrew Thompson",
+        "designation": "Software Engineer",
+        "salary": 60000,
+        "joiningDate": "2018-09-20"
+    },
+    {
+        "id": 18,
+        "name": "Sophia Wright",
+        "designation": "Product Manager",
+        "salary": 85000,
+        "joiningDate": "2019-02-28"
+    },
+    {
+        "id": 19,
+        "name": "Logan Hernandez",
+        "designation": "UI/UX Designer",
+        "salary": 65000,
+        "joiningDate": "2021-07-10"
+    },
+    {
+        "id": 20,
+        "name": "Ava Adams",
+        "designation": "Quality Assurance Engineer",
+        "salary": 55000,
+        "joiningDate": "2022-01-05"
+    },
+    {
+        "id": 21,
+        "name": "Mason Garcia",
+        "designation": "Project Manager",
+        "salary": 90000,
+        "joiningDate": "2020-03-15"
+    },
+    {
+        "id": 22,
+        "name": "Isabella Hill",
+        "designation": "Frontend Developer",
+        "salary": 60000,
+        "joiningDate": "2019-08-12"
+    },
+    {
+        "id": 23,
+        "name": "Ethan Moore",
+        "designation": "Backend Developer",
+        "salary": 65000,
+        "joiningDate": "2021-01-25"
+    },
+    {
+        "id": 24,
+        "name": "Mia Collins",
+        "designation": "Data Scientist",
+        "salary": 80000,
+        "joiningDate": "2018-07-07"
+    },
+    {
+        "id": 25,
+        "name": "James Parker",
+        "designation": "System Analyst",
+        "salary": 70000,
+        "joiningDate": "2020-05-10"
+    },
+    {
+        "id": 26,
+        "name": "Liam Phillips",
+        "designation": "UI/UX Designer",
+        "salary": 60000,
+        "joiningDate": "2019-11-20"
+    },
+    {
+        "id": 27,
+        "name": "Abigail Stewart",
+        "designation": "Software Engineer",
+        "salary": 55000,
+        "joiningDate": "2022-04-15"
+    },
+    {
+        "id": 28,
+        "name": "Benjamin Watson",
+        "designation": "Product Manager",
+        "salary": 85000,
+        "joiningDate": "2017-09-28"
+    },
+    {
+        "id": 29,
+        "name": "Chloe Ross",
+        "designation": "Quality Assurance Engineer",
+        "salary": 60000,
+        "joiningDate": "2021-02-15"
+    },
+    {
+        "id": 30,
+        "name": "Henry Evans",
+        "designation": "Frontend Developer",
+        "salary": 60000,
+        "joiningDate": "2022-03-10"
+    }
+]
