@@ -238,7 +238,7 @@ switchMapOperator() {
 
     );
 
-    //this.employees = [];
+    this.employees = [];
 
     switchedData.subscribe((switchedEmployee) => {
 
