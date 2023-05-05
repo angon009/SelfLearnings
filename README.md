@@ -2,39 +2,41 @@
 
 - **Map :**  It is used to transform the items emitted by an observable into new values. It takes an observable as its input, applies a transformation function to each emitted value, and returns a new observable with the transformed values. Example : 
 
+```
 mapOperator() {
 
-`    `const mappedData = from(this.employees).pipe(
+    `const mappedData = from(this.employees).pipe(
 
-`      `map((employee) => {                      
+      `map((employee) => {                      
 
-`        `return {
+        `return {
 
-`          `id: employee.id,
+         `id: employee.id,
 
-`          `name: employee.name.toUpperCase(),
+          `name: employee.name.toUpperCase(),
 
-`          `designation: `Senior ${employee.designation}`,
+          `designation: `Senior ${employee.designation}`,
 
-`          `salary: employee.salary,
+          `salary: employee.salary,
 
-`          `joiningDate: employee.joiningDate
+          `joiningDate: employee.joiningDate
 
-`        `};
+        `};
 
-`      `})
+      `})
 
-`    `);
+    `);
 
-`    `this.employees = [];
+    `this.employees = [];
 
-`    `mappedData.subscribe((mappedEmployee) => {
+    `mappedData.subscribe((mappedEmployee) => {
 
-`      `this.employees.push(mappedEmployee);
+      `this.employees.push(mappedEmployee);
 
-`    `});
+    `});
 
-`  `}
+  `}
+```
 
 Here, 
 
